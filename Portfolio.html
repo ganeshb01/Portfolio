@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Portfolio</title>
+    
+    <!-- This is where the styling (CSS) for the page is defined -->
+    <style>
+        /* Basic Setup & Fonts */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* A container to center the content */
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation Bar */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky; /* Makes the nav bar stick to the top */
+            top: 0;
+            z-index: 100;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        header nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        header a:hover {
+            color: #5cb85c; /* A nice green for hover effect */
+        }
+
+        /* Hero/Welcome Section */
+        #hero {
+            background: #5cb85c;
+            color: white;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+        }
+
+        /* General Section Styling */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        /* About Me Section */
+        #about img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image a circle */
+            margin: 0 auto 20px auto;
+            border: 3px solid #ddd;
+        }
+        
+        #about p {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+        }
+        
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+            gap: 20px;
+        }
+        
+        .project-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px); /* Lifts the card on hover */
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: 180px;
+            object-fit: cover; /* Ensures images look good */
+            border-radius: 5px;
+        }
+
+        .project-card h4 {
+            font-size: 1.2rem;
+            margin: 15px 0 10px 0;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project-card a:hover {
+            background: #555;
+        }
+        
+        /* Contact Section */
+        #contact {
+            text-align: center;
+        }
+
+        #contact p {
+            font-size: 1.1rem;
+        }
+        
+        #contact a {
+            color: #5cb85c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- // 1. HEADER & NAVIGATION // -->
+    <header>
+        <div class="container">
+            <h1>[Your Name]</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- // 2. HERO SECTION // -->
+        <section id="hero">
+            <div class="container">
+                <h2>Welcome to My Portfolio</h2>
+                <p>I'm a [Your Title - e.g., Web Developer, Designer, Student] passionate about creating amazing things.</p>
+            </div>
+        </section>
+
+        <!-- // 3. ABOUT ME SECTION // -->
+        <section id="about">
+            <div class="container">
+                <h3>About Me</h3>
+                <!-- TODO: Add a link to your profile picture in the src attribute -->
+                <img src="https://via.placeholder.com/150" alt="A photo of [Your Name]">
+                <p>
+                    Hello! I'm [Your Name]. 
+                    <!-- TODO: Write a short paragraph about yourself. -->
+                    I specialize in front-end development with a strong focus on building responsive and user-friendly web applications. I love learning new technologies and solving complex problems. When I'm not coding, I enjoy [Your Hobby 1] and [Your Hobby 2].
+                </p>
+            </div>
+        </section>
+
+        <!-- // 4. PROJECTS SECTION // -->
+        <section id="projects">
+            <div class="container">
+                <h3>My Projects</h3>
+                <div class="projects-grid">
+                    
+                    <!-- PROJECT 1 -->
+                    <div class="project-card">
+                        <!-- TODO: Add a screenshot of your project. You can use a placeholder for now. -->
+                        <img src="https://via.placeholder.com/300x180.png?text=Project+One+Screenshot" alt="Screenshot of Project One">
+                        <h4>[Project One Title]</h4>
+                        <p>
+                            A short description of your project. What technologies did you use? What was the purpose?
+                        </p>
+                        <!-- TODO: Add the link to your live project and GitHub repo -->
+                        <a href="#" target="_blank">View Project</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                    
+                    <!-- PROJECT 2 -->
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x180.png?text=Project+Two+Screenshot" alt="Screenshot of Project Two">
+                        <h4>[Project Two Title]</h4>
+                        <p>
+                            A short description of your project. What technologies did you use? What was the purpose?
+                        </p>
+                        <a href="#" target="_blank">View Project</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                    
+                    <!-- PROJECT 3 (You can copy and paste this block to add more projects) -->
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x180.png?text=Project+Three+Screenshot" alt="Screenshot of Project Three">
+                        <h4>[Project Three Title]</h4>
+                        <p>
+                            A short description of your project. What technologies did you use? What was the purpose?
+                        </p>
+                        <a href="#" target="_blank">View Project</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- // 5. CONTACT SECTION // -->
+        <section id="contact">
+            <div class="container">
+                <h3>Get In Touch</h3>
+                <p>I'm currently open to new opportunities. Feel free to reach out!</p>
+                <!-- TODO: Replace with your email address -->
+                <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- // 6. FOOTER // -->
+    <footer>
+        <p>© 2024 [Your Name]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
