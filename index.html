@@ -65,26 +65,35 @@
 
         <a href="Ganesh_Resume_01.pdf" download class="btn">Download CV</a>
       </div>
-      <div class="profession-container">
-        <div class="profession-box">
-          <div class="profession" style="--i: 0">
-            <i class="bx bxl-java"></i>
-            <h3>Java</h3>
-          </div>
-          <div class="profession" style="--i: 1">
-           <i class='bx  bx-code-alt'  ></i> 
-            <h3>Hibernate</h3>
-          </div>
-          <div class="profession" style="--i: 2">
-           <i class='bx  bx-code'  ></i> 
-            <h3>Spring Boot</h3>
-          </div>
-          <div class="profession" style="--i: 3">
-          <i class='bx  bx-database-alt'  ></i> 
-            <h3>My SQL</h3>
-          </div>
-          <div class="circle"></div>
-        </div>
+      <div id="professionSection">
+  <div class="profession-container">
+    <div class="profession-box">
+      <div class="profession" style="--i: 0">
+        <i class="bx bxl-java"></i>
+        <h3>Java</h3>
+      </div>
+      <div class="profession" style="--i: 1">
+        <i class='bx bx-code-alt'></i>
+        <h3>Hibernate</h3>
+      </div>
+      <div class="profession" style="--i: 2">
+        <i class='bx bx-code'></i>
+        <h3>Spring Boot</h3>
+      </div>
+      <div class="profession" style="--i: 3">
+        <i class='bx bx-database-alt'></i>
+        <h3>My SQL</h3>
+      </div>
+      <div class="circle"></div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="home-img">
+    <img src="images/developer.webp" alt="" />
+  </div>
+</div>
+
 
         <div class="overlay"></div>
       </div>
@@ -283,10 +292,9 @@
       
       </div> -->
       <!-- ========================= FOOTER START ========================= -->
-<footer style="background-color: #2c3e50; color: #ecf0f1; padding: 60px 0; font-family: Arial, sans-serif; line-height: 1.6; font-size: 16px;">
+<footer style="background-color: #2c3e50; color: #ecf0f1; padding: 60px 20px; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6;">
   
-  <!-- Main Footer Content Container -->
-  <div style="max-width: 1300px; margin: 0 auto; padding: 0 20px; display: flex; flex-wrap: wrap; justify-content: space-between; height:220px;">
+  <div style="max-width: 1300px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
     
     <!-- Column 1: About Us -->
     <div style="flex: 1; min-width: 250px; margin: 20px;">
@@ -295,7 +303,7 @@
         We are a team dedicated to creating amazing web experiences. Our mission is to provide high-quality products and services that bring value to our customers and partners.
       </p>
     </div>
-    
+
     <!-- Column 2: Quick Links -->
     <div style="flex: 1; min-width: 250px; margin: 20px;">
       <h4 style="color: #1abc9c; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #34495e; padding-bottom: 10px;">Quick Links</h4>
@@ -306,7 +314,7 @@
         <li style="margin-bottom: 10px;"><a href="#" style="color: #ecf0f1; text-decoration: none;">Contact</a></li>
       </ul>
     </div>
-    
+
     <!-- Column 3: Follow Us -->
     <div style="flex: 1; min-width: 250px; margin: 20px;">
       <h4 style="color: #1abc9c; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #34495e; padding-bottom: 10px;">Follow Us</h4>
@@ -317,21 +325,38 @@
         <li style="margin-bottom: 10px;"><a href="https://www.linkedin.com/in/ganesh-bage-a17338267/" style="color: #ecf0f1; text-decoration: none;">LinkedIn</a></li>
       </ul>
     </div>
-    
+
   </div>
-  
-  <!-- Copyright Bar -->
-  <div style="text-align: center; padding: 20px 0 0 0; margin-top: 40px; border-top: 1px solid #34495e;">
-    <p style="margin: 0; font-size: 14px;">© 2024 Your Company Name. All Rights Reserved.</p>
+
+  <!-- Footer Bottom -->
+  <div style="text-align: center; padding: 20px 0 0 0; margin-top: 40px; border-top: 1px solid #34495e; font-size: 14px;">
+    <p style="margin: 0;">© 2025 Ganesh Bage. All Rights Reserved.</p>
   </div>
-  
+
+  <!-- Mobile Responsive Script -->
+  <script>
+    function adjustFooterLayout() {
+      const width = window.innerWidth;
+      const container = document.querySelector('footer > div');
+      if (width < 768) {
+        container.style.flexDirection = 'column';
+        const columns = container.querySelectorAll('div[style*="min-width"]');
+        columns.forEach(col => col.style.textAlign = 'center');
+      } else {
+        container.style.flexDirection = 'row';
+        const columns = container.querySelectorAll('div[style*="min-width"]');
+        columns.forEach(col => col.style.textAlign = 'left');
+      }
+    }
+    window.addEventListener('resize', adjustFooterLayout);
+    window.addEventListener('load', adjustFooterLayout);
+  </script>
+
 </footer>
+
 <!-- ========================= FOOTER END ========================= -->
 
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
-    </footer>
+    
      <script>
                const scriptURL = 'https://script.google.com/macros/s/AKfycbzpf9rp-gyAIc477pJqXfUqMFFOObjgYDbr1QbtHuRHHPatTk3A-ItriGNONLD3YyoF7g/exec'
                const form = document.forms['submit-to-google-sheet']
@@ -351,5 +376,20 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- custom js -->
     <script src="js/script.js"></script>
+    <script>
+  function hideProfessionSectionOnMobile() {
+    const section = document.getElementById("professionSection");
+    if (window.innerWidth <= 768) {
+      section.style.display = "none";
+    } else {
+      section.style.display = "block";
+    }
+  }
+
+  // Call on page load and window resize
+  window.addEventListener("load", hideProfessionSectionOnMobile);
+  window.addEventListener("resize", hideProfessionSectionOnMobile);
+</script>
+
   </body>
 </html>
