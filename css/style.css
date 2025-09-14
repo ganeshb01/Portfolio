@@ -1084,3 +1084,41 @@ button:hover{
     }
     
 }
+/* Show by default */
+.profession-container {
+  display: block;
+}
+
+/* Hide on screens smaller than 992px (tablet + mobile) */
+@media (max-width: 1100px) {
+  .profession-container {
+    display: none;
+  }
+}
+/* Default (Laptop/Desktop) - keep normal layout */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 5%;
+  flex-wrap: wrap;
+}
+
+/* Center home-content when profession-container is hidden */
+@media (max-width: 991px) {
+  .home {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .social-media a {
+    margin: 0 10px;
+  }
+}
+
