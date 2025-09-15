@@ -1122,3 +1122,62 @@ button:hover{
   }
 }
 
+/* Default styles remain as they are */
+
+/* When screen width is 1000px or below */
+@media (max-width: 1000px) {
+  section.home {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: -20%;
+    padding-bottom: -20%;
+  }
+
+  #professionSection {
+    margin: 0;
+    padding: 0;
+  }
+
+  .home-content {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* keeps text centered on smaller screens */
+  }
+
+  .home-img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* When screen width is 1000px or below */
+@media (max-width: 1000px) {
+  section.about {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .about-img {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* centers the image */
+  }
+
+  .about-img img {
+    max-width: 80%; /* make image smaller for better fit */
+    height: auto;
+  }
+
+  .about-content {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .about-content h2,
+  .about-content h3,
+  .about-content p {
+    margin-bottom: 10px; /* reduce spacing between text */
+  }
+}
