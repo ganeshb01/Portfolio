@@ -1323,3 +1323,14 @@ button:hover{
     font-size: 0.95rem;
   }
 }
+/* Hide by default */
+#professionSection {
+  display: none;
+}
+
+/* Show only on larger screens */
+@media (min-width: 769px) {
+  #professionSection {
+    display: block;
+  }
+}
