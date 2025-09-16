@@ -1323,14 +1323,26 @@ button:hover{
     font-size: 0.95rem;
   }
 }
-/* Hide by default */
-#professionSection {
-  display: none;
-}
-
-/* Show only on larger screens */
-@media (min-width: 769px) {
-  #professionSection {
-    display: block;
+/* 📱 For devices between 750px and 990px */
+@media (min-width: 750px) and (max-width: 990px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    min-height: auto; /* Allow section to grow naturally */
+    width: 100%;
   }
+
+  .home-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .home-img img {
+    width: 250px; /* Set image width for mobile */
+    height: auto;
+    margin: 0 auto;
+  }
+
+
 }
