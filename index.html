@@ -55,33 +55,33 @@
       <a href="Ganesh_Resume_.pdf" download class="btn">Download CV</a>
     </div>
     <div id="professionSection" style="margin: 0; padding: 0;">
-  <div class="profession-container">
-    <div class="profession-box">
-      <div class="profession" style="--i: 0">
-        <i class="bx bxl-java"></i>
-        <h3>Java</h3>
+      <div class="profession-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+            <i class="bx bxl-java"></i>
+            <h3>Java</h3>
+          </div>
+          <div class="profession" style="--i: 1">
+            <i class='bx bx-code-alt'></i>
+            <h3>Hibernate</h3>
+          </div>
+          <div class="profession" style="--i: 2">
+            <i class='bx bx-code'></i>
+            <h3>Spring Boot</h3>
+          </div>
+          <div class="profession" style="--i: 3">
+            <i class='bx bx-database-alt'></i>
+            <h3>My SQL</h3>
+          </div>
+          <div class="circle"></div>
+        </div>
+        <div class="overlay"></div>
       </div>
-      <div class="profession" style="--i: 1">
-        <i class='bx bx-code-alt'></i>
-        <h3>Hibernate</h3>
-      </div>
-      <div class="profession" style="--i: 2">
-        <i class='bx bx-code'></i>
-        <h3>Spring Boot</h3>
-      </div>
-      <div class="profession" style="--i: 3">
-        <i class='bx bx-database-alt'></i>
-        <h3>My SQL</h3>
-      </div>
-      <div class="circle"></div>
-    </div>
-    <div class="overlay"></div>
-  </div>
 
-  <div class="home-img">
-    <img src="images/developer.webp" alt="" />
-  </div>
-</div>
+      <div class="home-img">
+        <img src="images/developer.webp" alt="" />
+      </div>
+    </div>
     </div>
 
 
@@ -146,26 +146,29 @@
   </section> -->
 
   <!-- portfolio section design -->
-    <!-- services section design -->
+  <!-- services section design -->
   <section class="services" id="services">
     <h2 class="heading">My <span>Services</span></h2>
     <div class="services-container">
       <div class="services-box">
         <i class="bx bx-laptop"></i>
         <h3>Back-End Development</h3>
-        <p>Building robust and scalable server-side applications, APIs, and databases using Java, Spring Boot, Hibernate, and Node.js.</p>
+        <p>Building robust and scalable server-side applications, APIs, and databases using Java, Spring Boot,
+          Hibernate, and Node.js.</p>
         <a href="#contact" class="btn">Inquire Now</a>
       </div>
       <div class="services-box">
         <i class="bx bx-code-alt"></i>
         <h3>Front-End Development</h3>
-        <p>Creating responsive and user-friendly interfaces with HTML, CSS, JavaScript, and modern frameworks like React.</p>
+        <p>Creating responsive and user-friendly interfaces with HTML, CSS, JavaScript, and modern frameworks like
+          React.</p>
         <a href="#contact" class="btn">Inquire Now</a>
       </div>
       <div class="services-box">
         <i class='bx bxs-data'></i>
         <h3>Database Management</h3>
-        <p>Designing and managing efficient databases using both SQL (MySQL) and NoSQL (MongoDB) technologies for optimal performance.</p>
+        <p>Designing and managing efficient databases using both SQL (MySQL) and NoSQL (MongoDB) technologies for
+          optimal performance.</p>
         <a href="#contact" class="btn">Inquire Now</a>
       </div>
     </div>
@@ -387,19 +390,19 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- custom js -->
   <script src="js/script.js"></script>
- <script>
-  function hideSectionOnMobile() {
-    const section = document.getElementById("professionSection");
-    if (window.innerWidth <= 768) {
-      section.style.display = "none";   // removes it completely including its space
-    } else {
-      section.style.display = "block";  // shows it on larger screens
+  <script>
+    function hideSectionOnMobile() {
+      const section = document.getElementById("professionSection");
+      if (window.innerWidth <= 768) {
+        section.style.display = "none";   // removes it completely including its space
+      } else {
+        section.style.display = "block";  // shows it on larger screens
+      }
     }
-  }
 
-  window.addEventListener("load", hideSectionOnMobile);
-  window.addEventListener("resize", hideSectionOnMobile);
-</script>
+    window.addEventListener("load", hideSectionOnMobile);
+    window.addEventListener("resize", hideSectionOnMobile);
+  </script>
 
 
 </body>

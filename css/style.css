@@ -1222,7 +1222,7 @@ button:hover{
 
   .home-content {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .home-img img {
@@ -1234,7 +1234,7 @@ button:hover{
   #professionSection {
     width: 100%;
     height: auto; /* make it flexible */
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .profession-container {
@@ -1345,4 +1345,14 @@ button:hover{
   }
 
 
+}
+ #professionSection {
+  display: none;
+}
+
+/* Show only for screen width > 900px */
+@media (min-width: 900px) {
+  #professionSection {
+    display: block;
+  }
 }
