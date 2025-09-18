@@ -1197,7 +1197,7 @@ button:hover{
   padding: 50px 10%;
   min-height: 100vh; /* Full screen height */
   width: 100%;
-  background: #f8f8f8;
+  /* background: #f8f8f8; */
 }
 
 .home-content {
@@ -1262,7 +1262,7 @@ button:hover{
   gap: 50px;
   padding: 60px 10%;
   min-height: 80vh;
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 .about-img img {
